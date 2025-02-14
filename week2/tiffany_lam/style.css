@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: white;
+    color: black;
+    align-items: center;
+    /* background-image: linear-gradient(purple, white); */
+  }
+
+button {
+  outline: auto;
+  background-color: blanchedalmond;
+}  
+
+.main_img {
+  /* width: 300px;
+  height: auto; */
+  outline:auto ;
+}
