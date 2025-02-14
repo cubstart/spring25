@@ -2,14 +2,35 @@
 <html>
   <head> 
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @keyframes moveLink {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(900px); }
+        100% { transform: translateX(0); }
+      }
+      
+      nav ul li:nth-child(3) a {
+        display: inline-block;
+        animation: moveLink 2s infinite ease-in-out;
+      }
+    </style>
   </head>
 
 <body>
 
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About ME</a></li>
+      <li><a href="https://www.diamondpeak.com/?utm_source=google&utm_medium=cpc&utm_campaign=exl_nonbranded&gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbavp-XUqkNh0zlUmuvnvqlf9nCZBZYEx38n-2TPvE1a5XB84sosggtRoCAwYQAvD_BwE">Ski Resort</a></li>
+    </ul>
+  </nav>
+
 
  
-    <h1><b>Fumo Project</b></h1>
+    <h1>Fumo Project</h1>
     <p>Fumo fumo fumo fumo fumo</p>
+
     <p>umaretate no hina no you ni
         tada sekai wo moushin shiteru
         wakaremichi wo erabenakute mo
