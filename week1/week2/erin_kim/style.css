@@ -1,0 +1,11 @@
+img {
+    width: 200px;
+}
+body {
+    text-align: center;
+    font-family: "Didot, monospace";
+    background: black;
+    color: white;
+    background-image: url("https://i.pinimg.com/736x/02/99/10/029910b9cf0b8834e2498129b45ff936.jpg");
+    background-size: cover;
+}
