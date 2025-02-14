@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(255, 225, 0);
+    padding: 2rem;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #6c757d;
+    text-align: center;
+}
+
+.projects {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    margin: 0.5rem 0;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
