@@ -3,11 +3,13 @@ img {
 }
 body {
     text-align: center;
-    font-family: 'Arial';
-    font-size: x-large;
+    font-family: "Lobster", serif;
+    font-size: large;
     background: midnightblue;
     color: forestgreen;
     letter-spacing: 0px ;
+  
+
 }
 
 #title {
@@ -15,7 +17,13 @@ body {
     font-family: 'American Typewriter';
 }
 #Yang {
-    font-family: 'American Typewriter'
-    font-size: x-large;
+    font-family: 'American Typewriter';
+    font-size: 100px;
+    color: red;
 
 }
+.lobster-regular {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
