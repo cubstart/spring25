@@ -1,0 +1,32 @@
+/* Style for the main headline */
+h1{
+    font-size: 50px;
+    text-align: center; /* Centers the text */
+    font-family: 'Poppins', sans-serif; /* Modern Google Font */
+}
+
+/* Style for the interests section */
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+body{
+    background: #E0FFFF; /* Light cyan background */
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+/* profile picture */
+.profile-pic {
+    width: 180px; 
+    height: 250px;
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+
+.socialmedia{
+    width: 30px; 
+    height: 30px;
+}
+
