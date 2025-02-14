@@ -1,0 +1,25 @@
+img {
+    align-content: center;
+    size: 200px;
+    max-width: 25%;
+}
+
+body {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: darkslategray;
+    color: whitesmoke;
+}
+
+div {
+    align-content: center;
+    display: flexbox;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.game {
+    align-content: center;
+}
