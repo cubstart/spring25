@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="ferrari-container">
+            <img id="avatar" src="https://aycuber.github.io/Austin-Chen-Portfolio/assets/images/austin.png" alt="Avatar" />
+            <img class="ferrari" src="https://pngimg.com/uploads/ferrari/ferrari_PNG102810.png" alt="Ferrari" />
+        </div>
+        <h1>Austin Chen</h1>
+        <p>I love Cubstart</p>
+        <button type="button" onclick="rotateImage()">Rotate 360°</button>
+        <button type="button" onclick="tweakOutImage()">Tweak Out!</button>
+        <button type="button" onclick="driveFerrari()">Drive Ferrari</button>
+
+        <audio id="ferrari-song" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+        <script>
+            function rotateImage() {
+                const image = document.getElementById('avatar');
+                image.classList.add('rotate');
+                image.addEventListener('animationend', () => {
+                    image.classList.remove('rotate');
+                }, { once: true });
+            }
+
+            function tweakOutImage() {
+                const image = document.getElementById('avatar');
+                image.classList.add('tweak-out');
+                image.addEventListener('animationend', () => {
+                    image.classList.remove('tweak-out');
+                }, { once: true });
+            }
+
+            function driveFerrari() {
+                const avatar = document.getElementById('avatar');
+                const ferrariContainer = document.querySelector('.ferrari-container');
+                const audio = document.getElementById('ferrari-song');
+
+                ferrariContainer.classList.add('drive-off');
+                audio.play();
+
+                ferrariContainer.addEventListener('animationend', () => {
+                    ferrariContainer.classList.remove('drive-off');
+                    ferrariContainer.classList.add('drive-back');
+
+                    ferrariContainer.addEventListener('animationend', () => {
+                        ferrariContainer.classList.remove('drive-back');
+                    }, { once: true });
+                }, { once: true });
+            }
+        </script>
+    </body>
+</html>
