@@ -1,0 +1,10 @@
+img {
+    width: 200px;
+}
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: rgb(232, 222, 207);
+    color: rgb(129, 109, 76);
+    padding-top: 200px
+  }
