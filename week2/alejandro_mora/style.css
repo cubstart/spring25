@@ -8,8 +8,8 @@ img {
 body {
     text-align: center; 
     font-family: 'Tahoma';
-    background-color: azure; 
-    color: black; /* Text Color*/
+    background-color: black; 
+    color: azure; /* Text Color*/
 
     display: block;
     margin-left: auto;
