@@ -1,0 +1,80 @@
+img {
+    animation-duration: 0.75s;
+    animation-name: slide-in;
+    width : 200px;
+    border-radius: 5pt;
+    margin: auto;
+    display: block;
+}
+body {
+    animation: color-shift 20s infinite;
+    font-family: 'Courier New';
+    color: black;
+}
+h1 {
+    animation-duration: 1s;
+    animation-name: slide-in;
+    text-align: center;
+    font-weight: bold;
+}
+h2 {
+    animation-duration: 1.5s;
+    animation-name: slide-in;
+    text-align: left;
+    padding-left: 20pt;
+}
+h3 {
+    animation-duration: 1.5s;
+    animation-name: slide-in;
+    text-align: left;
+    padding-left: 40pt;
+}
+p {
+    animation-duration: 2s;
+    animation-name: slide-in;
+    text-align: left;
+    padding-left: 40pt;
+    padding-right: 40pt;
+}
+video {
+    animation-duration: 2s;
+    animation-name: slide-in;
+    padding-left: 45pt;
+    border-radius: 5pt;
+}
+button {
+    animation-duration: 2s;
+    animation-name: slide-in;
+    font-size: large;
+    margin: center;
+    padding: 10pt;
+    font-family: 'Courier New';
+    background-color: #FEF9E1;
+    border-radius: 1pt;
+}
+.wrapper {
+    text-align: center;
+}
+
+@keyframes slide-in{
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+      }
+}
+
+@keyframes color-shift{
+    0%, 100% {
+        background-color: #A7B49E; 
+    }
+    25%, 75%{
+        background-color: #EFB6C8;
+    }
+    50% {
+        background-color: #B3C8CF;
+    }
+}
