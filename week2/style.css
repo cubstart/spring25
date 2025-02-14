@@ -1,0 +1,9 @@
+img {
+    width: 300px;
+  }
+  body {
+    text-align: center;
+    font-family: 'Arial';
+    background: grey;
+    color: red;
+  }
