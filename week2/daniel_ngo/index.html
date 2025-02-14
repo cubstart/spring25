@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <!-- Idea #9: Show a random picture on load -->
+        <script type="text/javascript">
+            var URLs = [
+                "https://www.shutterstock.com/image-illustration/monkey-typing-on-computer-funny-600nw-573117796.jpg",
+                "https://img.freepik.com/free-vector/cute-monkey-working-laptop_138676-3304.jpg"
+            ];
+            function getRandomImg() {
+                var img = '<img src=\"';
+                var randIndex = Math.floor(Math.random() * URLs.length);
+                img += URLs[randIndex];
+                img += '\" width=\"375\" />';
+                return img;
+            }
+        </script>
+    </head>
+    <meta charset="UTF-8">
+    <body>
+        <!-- Idea #2: Added images -->
+        <!-- <img
+            src="https://www.shutterstock.com/image-illustration/monkey-typing-on-computer-funny-600nw-573117796.jpg"
+            width="375"
+            /> -->
+        <script type="text/javascript"> 
+            document.write(getRandomImg());
+        </script>
+        
+
+        <!-- Idea #1: Bold, Underline, and Italicize Text -->
+        <h1><u> Daniel Ngo </u></h1>
+        <p><b> Coder Monkey </b> </p>
+        <p><i>Will code for food or money plsss </i> &#128591 </p>
+        <!-- Idea #3: Add pages and link them -->
+        <a href="about.html">
+            <!-- Idea #8: Added a button -->
+            <button type="button">My portfolio (it's good I swear &#128557) </button>
+        </a>
+        <br>
+        <br>
+        <br>
+        <img
+            src="https://media.tenor.com/qEYDGjtSsuEAAAAj/food.gif"
+            width="150"
+        />
+        <!-- Challenge #12: Add current data and time to website and up to date on reload -->
+        <p id="datetime"></p>
+        <script>
+            var now = new Date();
+            var datetime = "Time Accessed Website: " + now.toLocaleString();
+
+            document.getElementById("datetime").innerHTML = datetime;
+        </script>
+    </body>
+</html>
