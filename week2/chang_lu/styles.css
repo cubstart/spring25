@@ -1,0 +1,22 @@
+img {
+    width: 200px;
+}
+
+body {
+    text-align: center;
+    font-family: "Arial";
+    background-image: linear-gradient(red, yellow);
+}
+
+#introduction-text {
+    color: black;
+    transition:color 0.5s;
+}
+
+#introduction-text:hover {
+  color:blue;
+}
+
+p {
+    font-style: italic;
+}
