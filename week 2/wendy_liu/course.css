@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: 'Georgia';
+    color: rgb(230, 233, 240); 
+    background: rgb(58, 64, 83);
+}
+
+p {
+    color: rgb(239, 242, 246);   
+}
+
+
+h3 {
+    color:rgb(151, 139, 183)
+}
+button {
+    background: rgb(255, 244, 245);
+    font-family: 'Georgia';
+    border-radius: 9px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
