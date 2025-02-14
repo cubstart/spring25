@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="kokona100.png">
+    <h1>100점 만점</h1>
+    <p>
+        <marquee behavior="alternate" scrollamount="999">Full Marks</marquee>
+    </p>
+    <p>참 잘했어요!</p>
+
+    <audio id="audio" src="lobotomy.mp3" preload="auto" loop></audio>
+
+    <div id="overlay">
+      <img src="41a.jpg">
+    </div>
+    <button onclick="myFunction()">Click me to change the page color!</button>
+    
+    <script>
+    function myFunction() {
+      document.getElementById("overlay").style.display = "flex";
+      document.getElementById("audio").play();
+    }
+    </script>
+  </body>
+</html>
