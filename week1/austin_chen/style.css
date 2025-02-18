@@ -1,0 +1,10 @@
+img {
+    width: 200px;
+    border-radius: 50%;
+}
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: blue;
+    color: yellow;
+}

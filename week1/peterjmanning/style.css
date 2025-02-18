@@ -1,0 +1,28 @@
+img {
+    width: 700px;
+}
+body {
+    text-align: center;
+    font-family: 'Arial';
+}
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: #a8bac2;
+    color: #000000;
+}
+.styled-button {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    padding: 15px 30px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+.styled-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+

@@ -1,0 +1,14 @@
+img {
+    width: 300px;
+  }
+
+
+
+  body {
+
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    background: aqua;
+    
+    background-image: url("https://media.tenor.com/6lm-svEn7dEAAAAM/cirno-fumo.gif");
+  }

@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 45px;
+}
+header nav ul{
+    display: flex;
+    margin-left: 80%;
+}
+
+header nav ul li{
+    padding-left: 10%;
+}
+
+img {
+    width : 200px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Segoe UI';
+    background: azure;
+    color: green;
+}

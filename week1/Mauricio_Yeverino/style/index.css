@@ -1,0 +1,12 @@
+.main-section{
+  display: flex;
+  cursor: pointer;
+}
+
+.main-section:hover{
+  cursor: pointer;
+}
+
+img {
+  height: 20rem;
+}
