@@ -1,0 +1,23 @@
+img{
+    width: 200px; 
+}
+
+body { 
+    text-align: center;
+    font-family: "Times New Roman";
+    background: cornflowerblue;
+    color: black;
+}
+
+head{
+    font-style: 'Times New Roman';
+    text-align: 'right';
+    color: 'purple'
+
+}
+
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0kKCXTeBsvmAhrhtwgFT-zwLODCNOYnFe5g&s");
+    background-size: 100vw 100vh;
+    image-rendering: pixelated;
+}

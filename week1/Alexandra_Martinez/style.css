@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    font-family:'Courier New';
+    color: darkred;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    color: lightskyblue;
+}
+a:active {
+    color: lightcyan;
+}

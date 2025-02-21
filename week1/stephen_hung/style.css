@@ -1,0 +1,28 @@
+img {
+    width : 200px;
+    border-radius: 5pt;
+    margin: auto;
+    display: block;
+}
+body {
+    font-family: 'Courier New';
+    background: beige;
+    color: black;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: left;
+    padding-left: 20pt;
+}
+h3 {
+    text-align: left;
+    padding-left: 40pt;
+}
+p {
+    text-align: left;
+    padding-left: 40pt;
+    padding-right: 40pt;
+}
+

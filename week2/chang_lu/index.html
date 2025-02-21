@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <div>
+            <img id="suzy-pic" src="https://m.media-amazon.com/images/M/MV5BYWE3MGU4MjctYjY1YS00MjJhLThjZjYtNDk5MDFhMzRkMzQ1XkEyXkFqcGc@._V1_.jpg"/
+                width="600">
+            <h1 id="introduction-text">Introducing My Gf!</h1>
+            <p>Bae Suzy</p>
+            <p>aka my gf</p>
+            <button id="click-me-btn">Click Me!</button>
+        </div>
+
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YdOXS_9_P4U?si=y2Unm3M_lz17THzT" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        
+        <div>
+            <a href="othergf.html">Go see my other gf!</a>
+        </div>
+    </body>
+
+    <script>
+        const clickMeBtn = document.getElementById("click-me-btn");
+        const suzyPic = document.getElementById("suzy-pic");
+        let picChange = false;
+        clickMeBtn.addEventListener("click", ()=>{
+            if (picChange) {
+                suzyPic.src = "https://nationaltoday.com/wp-content/uploads/2022/09/Bae-Suzy-Birthday-1200x834.jpg"
+            } else {
+                suzyPic.src = "https://m.media-amazon.com/images/M/MV5BYWE3MGU4MjctYjY1YS00MjJhLThjZjYtNDk5MDFhMzRkMzQ1XkEyXkFqcGc@._V1_.jpg"
+            }
+            picChange = !picChange;
+        })
+    </script>
+</html>

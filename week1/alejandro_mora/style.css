@@ -1,0 +1,17 @@
+img {
+    width: 200px;
+}
+
+body {
+    text-align: center; 
+    font-family: 'Tahoma';
+    background-color: azure; 
+    color: black; /* Text Color*/
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: auto;
+    width: 50%;
+}

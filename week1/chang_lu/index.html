@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <img id="suzy-pic" src="https://m.media-amazon.com/images/M/MV5BYWE3MGU4MjctYjY1YS00MjJhLThjZjYtNDk5MDFhMzRkMzQ1XkEyXkFqcGc@._V1_.jpg"/>
+        <h1>Bae Suzy</h1>
+        <p>Hot</p>
+        <p>Bae Suzy</p>
+        <button id="click-me-btn">Click Me!</button>
+    </body>
+    <script>
+        const clickMeBtn = document.getElementById("click-me-btn");
+        const suzyPic = document.getElementById("suzy-pic");
+        let picChange = false;
+        clickMeBtn.addEventListener("click", ()=>{
+            if (picChange) {
+                suzyPic.src = "https://nationaltoday.com/wp-content/uploads/2022/09/Bae-Suzy-Birthday-1200x834.jpg"
+            } else {
+                suzyPic.src = "https://m.media-amazon.com/images/M/MV5BYWE3MGU4MjctYjY1YS00MjJhLThjZjYtNDk5MDFhMzRkMzQ1XkEyXkFqcGc@._V1_.jpg"
+            }
+            picChange = !picChange;
+        })
+    </script>
+</html>

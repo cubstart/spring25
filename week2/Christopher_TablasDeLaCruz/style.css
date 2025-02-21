@@ -1,0 +1,40 @@
+img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+img:hover{
+    width: 700px;
+    transform: rotate(360deg);
+    transition: 5s;
+}
+body {
+    text-align: center;
+    font-family: cursive;
+    background: cornflowerblue;
+}
+.button {
+    background-color: chocolate;
+    border-radius: 10px;
+    padding: 50px;
+}
+.button:active{
+    position: relative;
+    animation-name: movearound;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+.button:hover{
+    background-color: yellow;
+    transition: .5s;
+    transform: rotate(360deg);
+}
+@keyframes movearound {
+    0% {background-color: red; left:0; top:0px;}
+    25% {background-color: purple; left:300px; top:0px;}
+    50% {background-color: rgb(29, 252, 70); left: 300px; top: 300px}
+    75% {background-color: rgb(255, 0, 247); left:0px; top:300px}
+    100% {background-color: brown; left: 0px; top:0px}
+
+}

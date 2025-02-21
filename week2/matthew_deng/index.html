@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @keyframes moveLink {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(900px); }
+        100% { transform: translateX(0); }
+      }
+      
+      nav ul li:nth-child(3) a {
+        display: inline-block;
+        animation: moveLink 2s infinite ease-in-out;
+      }
+      
+      body {
+        transition: background 0.5s ease-in-out;
+      }
+      
+      .top-right-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 10px 20px;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About ME</a></li>
+      <li><a href="https://www.diamondpeak.com/?utm_source=google&utm_medium=cpc&utm_campaign=exl_nonbranded&gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbavp-XUqkNh0zlUmuvnvqlf9nCZBZYEx38n-2TPvE1a5XB84sosggtRoCAwYQAvD_BwE">Ski Resort</a></li>
+    </ul>
+  </nav>
+
+  <button class="top-right-button" onclick="changeBackground()">HELLLLLP</button>
+  
+  <h1>Fumo Project</h1>
+  <p>Fumo fumo fumo fumo fumo</p>
+
+  <p>umaretate no hina no you ni
+      tada sekai wo moushin shiteru
+      wakaremichi wo erabenakute mo
+      watashi kara anata e to
+      okuru jyuuyon e susumu messeeji</p>
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/R-6BIJECOSo?si=HWBdXbPrPYU2O7pm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+  <center>
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">you vs the girl that tells you to not worry about <a href="https://t.co/lad2aizZfW">pic.twitter.com/lad2aizZfW</a></p>&mdash; Gensokyo Reimagined (@greimaginedsmp) <a href="https://twitter.com/greimaginedsmp/status/1886517382660932047?ref_src=twsrc%5Etfw">February 3, 2025</a></blockquote> 
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </center>
+
+  <script>
+    function changeBackground() {
+      document.body.style.background = "url('https://media1.tenor.com/m/u4iPc3J_99UAAAAd/yapping-yapping-level-today.gif') no-repeat center center fixed";
+      document.body.style.backgroundSize = "cover";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+img {
+    width: 200px;
+  }
+body {
+    text-align: center;
+    font-family: 'Courier';
+    background: azure;
+    color: purple;
+  }
+ul {
+    text-align: left;
+}
+ul li:hover {
+    background: #ddd;
+
+  }
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }

@@ -1,0 +1,15 @@
+/* img {
+    width: 350px;
+} */
+
+body {
+    text-align: center;
+    font-family:'Roboto';
+    font-size: larger;
+    /* background: azure; */
+    color: darkslateblue;
+}
+
+a:link {
+    color: green;
+}
