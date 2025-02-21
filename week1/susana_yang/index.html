@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <img 
+        src="https://github.com/sevenminusone/spring25/blob/main/week1/Michi%20estudioso%20(1).jpg?raw=true"
+        id="cat"
+    />
+    <h1>make cat study</h1>
+    <p>* click on the cat *</p>
+    <p></p>
+
+    <script>
+        var image = document.getElementById('cat');
+        var studying = false;
+
+        image.addEventListener('click', function(){
+            changeImage();
+        });
+
+        function changeImage(){
+            if (!studying) {
+                image.src = "https://github.com/sevenminusone/spring25/blob/main/week1/Michi%20estudioso.jpg?raw=true";
+                studying = true;
+            } else {
+                image.src = "https://github.com/sevenminusone/spring25/blob/main/week1/Michi%20estudioso%20(1).jpg?raw=true"
+                studying = false;
+            }
+        }
+    </script>
+  </body>
+</html>
