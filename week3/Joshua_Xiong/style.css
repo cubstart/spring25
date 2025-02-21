@@ -1,0 +1,16 @@
+#cookie {
+    width: 500px;
+    height: 500px;
+    transition: width 0.1s, height 0.1s;
+    }
+    #cookie.shrink {
+        width: 450px;   /* Shrunken width */
+        height: 450px;  /* Shrunken height */
+    }
+    body {
+        text-align: center;
+        font-family: 'Arial';
+        color: black;
+        height: 1000px;
+        background-image: linear-gradient(pink, pink);
+      }
