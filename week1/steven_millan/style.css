@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #333;
+    padding: 10px;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10 px;
+}
+nav ul li a:hover{
+    background-color: #555;
+    border-radius: 5px;
+}
+.parallax-banner{
+    background-image: url('jesse-breaking-bad.jpg');
+    height: 100 vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.banner-text{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.content{
+    padding: 50px;
+    background: white;
+    text-align: center;
+}
+img{
+    width: 200 px;
+}
+
+body{
+    text-align: center;
+    font-family: 'Arial';
+    background-color: white;
+    color: black;
+}
