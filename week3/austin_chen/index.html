@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Counter</title>
+    <style>
+        .rgb-effect {
+            animation: rgbAnimation 1s infinite;
+        }
+
+        @keyframes rgbAnimation {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1><span id="counter">0</span> cookies</h1>
+    <img id="cookieImage" src="https://www.inkatrinaskitchen.com/wp-content/uploads/2011/04/Cookie-Monster-Cookies.jpg" onclick="addOneToCounter()" />
+    <script src="script.js"></script>
+</body>
+</html>
