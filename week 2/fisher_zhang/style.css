@@ -71,7 +71,7 @@ nav {
 /* Define the spinning animation */
 @keyframes spin {
     0% { transform: rotate(0deg); }
-    100% { transform: rotate(1000deg); }
+    100% { transform: rotate(100deg); }
 }
 
 /* Apply infinite spinning on hover */
