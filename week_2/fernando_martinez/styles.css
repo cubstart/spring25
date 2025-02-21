@@ -1,0 +1,36 @@
+
+body {
+    text-align: center;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+    
+}
+
+#name {
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 15px;
+}
+
+#about-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 60vh;
+    gap: 150px;
+}
+
+#selfie {
+    padding-top: 100px;
+    border-radius: 50px;
+    width: 250px;
+}
+
+#about {
+    padding-top: 100px;
+    width: 500px;
+    font-size: 20px;
+}
+
+
+
