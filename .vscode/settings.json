@@ -1,3 +1,4 @@
 {
-  "liveServer.settings.multiRootWorkspaceName": "cubstart-sp25"
+  "liveServer.settings.multiRootWorkspaceName": "cubstart-sp25",
+  "liveServer.settings.port": 5501
 }
