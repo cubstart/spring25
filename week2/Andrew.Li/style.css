@@ -8,7 +8,7 @@ body {
     background: midnightblue;
     color: yellow;
     letter-spacing: 0px ;
-    background-image:url(image/landscape.jpg) ;
+    background-image:url(image/Sea\ Side.JPG) ;
     background-size: cover;
     background-repeat: repeat-y;
   
@@ -27,13 +27,19 @@ body {
 }
 #content{
     font-size: x-large;
+    color:aliceblue
+
 
 }
 #last{
     font-size: x-large;
+    color:aliceblue
 }
 .lobster-regular {
     font-family: "Lobster", serif;
     font-weight: 400;
     font-style: normal;
   }
+a {
+    color:aliceblue
+}
