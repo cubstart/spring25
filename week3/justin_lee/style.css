@@ -1,0 +1,26 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+body {
+    font-family:'Comic Sans MS';
+    background: mistyrose;
+    color: firebrick;
+}
+
+
+#dropButton {
+    display: none;
+}
+#cookiesDropped {
+    display: none;
+}
+#eatButton {
+    display: none;
+}
+#cookiesEaten {
+    display: none;
+}
+#cookieMerchant {
+    display: none;
+}
