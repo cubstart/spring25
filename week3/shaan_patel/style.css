@@ -1,0 +1,17 @@
+img {
+    width: 500px;
+  }
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: rgb(83, 83, 126);
+    color: rgb(255, 255, 255);
+}
+
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: linear-gradient(180deg, hsl(234, 50%, 50%), #000000);
+    color: rgb(255, 255, 255);
+    height: 1000px;
+}
