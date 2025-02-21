@@ -1,0 +1,65 @@
+img {
+    width: 600px;
+    /* height: 20px; */
+}
+
+body {
+    text-align: center;
+    font-family: "Geneva";
+    background: teal;
+    animation-name: test;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    color: azure;
+}
+
+button {
+    font-family: "Geneva";
+    background-color: azure;
+    color: #987999;
+    width: 80.5px;
+    height: 45px;
+    font-size: 14px;
+}
+
+a {
+    color: azure;
+}
+
+iframe {
+    width: 1000px;
+    height: 590px;
+}
+
+@keyframes test {
+    0%   {background-color: turquoise;}
+    25%  {background-color: rgb(50, 181, 168);}
+    50%  {background-color: rgb(50, 160, 149);}
+    50%  {background-color: rgb(50, 140, 120);}
+    100% {background-color: teal;}
+}
+
+@keyframes perimeter {
+    0%  {left:0px; top:0px;}
+    25% {left:1257px; top:0px;}
+    50% {left:1257px; top:699px;}
+    75% {left:0px; top:699px;}
+    100% {left:0px; top:0px;}
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    animation-name: perimeter;
+    animation-duration: 10s;
+    position: absolute;
+}
+
+h1 {
+    /* font-size: 72px; */
+    background: -webkit-linear-gradient(#ee99ee, #220773);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

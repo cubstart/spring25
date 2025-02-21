@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <img id="lightbulb" src="https://news.berkeley.edu/wp-content/uploads/2016/09/Oskicupcake750.jpg"/>
+        <h1>Litong Deng</h1>
+       <!-- <h1> --> <a href="https://www.dailycal.org/blogs/grammar/words-can-be-loud-too/article_1f758586-be8c-11ef-a28d-531cdcf4565f.html"> My article in The Daily Californian </a><!--</h1>-->
+       <p><a href="second_page.html">Page 2</a></p>
+        <p><button type="button" onclick="lightSwitch()">Click Me Twice!</button></p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2bl81llf715VEEbAx03yvB?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe src="https://cubstart.com" title="My article in the Daily Californian"></iframe>
+        <script src="main.js"></script></body>
+    <script>
+        function lightSwitch() {
+            const light = document.getElementById("lightbulb");
+            if (light.src == "https://as2.ftcdn.net/jpg/00/77/99/99/1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg") {
+                light.src = "https://e7.pngegg.com/pngimages/922/441/png-clipart-creative-bulb-lightbulb-energy-saving-lamps.png";
+            } else if (light.src == "https://e7.pngegg.com/pngimages/922/441/png-clipart-creative-bulb-lightbulb-energy-saving-lamps.png") {
+                light.src = "https://as2.ftcdn.net/jpg/00/77/99/99/1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg";
+            } else {
+                light.src = "https://as2.ftcdn.net/jpg/00/77/99/99/1000_F_77999958_tZYT7xWlSJewLgsMYY3CrAWvYITlWYTF.jpg";
+            }
+        }
+    </script>
+</html>
