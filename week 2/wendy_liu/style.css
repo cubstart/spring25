@@ -1,0 +1,32 @@
+img {
+    width: 600px;
+    border: 5px solid #c7c7d2
+}
+
+body {
+    text-align: center;
+    font-family: 'Georgia';
+    color: rgb(230, 233, 240); 
+    background: rgb(58, 64, 83);
+}
+
+p {
+    color: rgb(239, 242, 246);   
+}
+
+p1 {
+    color: rgb(160, 167, 202);
+}
+
+p2 {
+    text-align: center;
+}
+
+button {
+    background: rgb(255, 244, 245);
+    font-family: 'Georgia';
+    border-radius: 9px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
