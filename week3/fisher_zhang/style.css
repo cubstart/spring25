@@ -1,0 +1,38 @@
+.cookie {
+    width: 200px; 
+    height: auto; /* Keeps the aspect ratio */
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+
+@keyframes rotate360 {
+    from {
+      transform: rotate(0deg); /* define a key frame that rorate the pictuere*/
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.rotate {
+    animation: rotate360 1s linear; /*do the animation in one second linearly*/
+  }
+  
+
+
+
+#progress-container {
+    width: 300px;           /* Width of the progress bar container */
+    height: 20px;           /* Height of the progress bar container */
+    border: 1px solid #000; /* A simple border for visibility */
+    margin: 10px auto;      /* Centers the container */
+    background-color: #eee; /* Light background color for contrast */
+  }
+  
+#progress-bar {
+    height: 100%;           /* Fills the height of the container */
+    width: 0%;              /* Start with no fill */
+    background-color: red; /* The fill color */
+    transition: width 0.3s ease-out;  /* Smooth transition for width changes */
+  }
+  
