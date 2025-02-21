@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1><span id="counter">0</span> bites 🍪</h1>
+        <h2 id="cookie-count">Cookies eaten: 0</h2> 
+
+        <div class="image-container">
+            <img id="cookie-img" src="cookies/1.png" class="cookie" onclick="addOneToCounter()"/>
+        </div>
+
+        <button id="restart-btn" onclick="restartGame()" style="display: none;">
+            Let me eat one more 🥹
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
