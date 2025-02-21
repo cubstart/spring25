@@ -32,7 +32,7 @@ ul li {
     list-style:none;
     min-width: 5px;
 }
-ul:hover li {
+ul li {
     transform: rotateY(1080deg);
     color: #F39B6D; /* Color change on hover */
 }

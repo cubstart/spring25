@@ -1,0 +1,30 @@
+img {
+    max-height: 500px;
+}
+body {
+    text-align: center;
+    font-family: "Arial";
+    background-image: linear-gradient(#0F4C81, #EBF2FA);
+    color: black;
+    min-height: 700px;
+}
+
+  .rotate160deg {
+    rotate: 160deg;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 20;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+ul li {
+    transition: transform 0.8s, color 0.8s;
+    list-style:none;
+    min-width: 5px;
+}
