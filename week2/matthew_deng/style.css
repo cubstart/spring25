@@ -1,0 +1,43 @@
+img {
+    width: 300px;
+  }
+
+  ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #575757;
+
+
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  
+  li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #bc0000;
+  }
+
+  body {
+    padding: 0; margin: 0;
+
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    background: aqua;
+    
+    background-image: url("https://media.tenor.com/6lm-svEn7dEAAAAM/cirno-fumo.gif");
+  }

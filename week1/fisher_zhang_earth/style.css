@@ -1,0 +1,10 @@
+img{
+    width: 500px;
+}
+body{
+    text-align:center;
+    font-family: 'Arial';
+    background: azure;
+    color:purple;
+    font-size: 50;
+}

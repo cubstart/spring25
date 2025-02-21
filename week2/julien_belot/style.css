@@ -1,0 +1,32 @@
+img {
+    width: 200px
+}
+
+body {
+    text-align: left;
+    font-family: 'Arial';
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman';
+    color: yellow;
+    font-weight: bold;
+    background-color: black;
+    text-decoration-line: underline;
+    text-shadow: 2px 2px;
+}
+
+
+/*html { 
+    background: "./images/DJI_0283.jpg"; 
+    background-size:auto;
+  }
+*/
+
+body {
+    background-image:url("./images/DJI_0283.jpg");
+    background-size:100% auto;
+    background-repeat: no-repeat;
+   }

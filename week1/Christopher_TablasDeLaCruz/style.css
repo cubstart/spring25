@@ -1,0 +1,10 @@
+img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+body {
+    text-align: center;
+    font-family: cursive;
+    background: cornflowerblue;
+}

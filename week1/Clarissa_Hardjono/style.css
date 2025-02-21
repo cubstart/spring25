@@ -1,0 +1,19 @@
+img {
+    width: 400px;
+}
+
+body{
+    text-align: center;
+    font-family: 'Arial';
+    background: azure;
+    color: palevioletred;
+}
+
+.hover-image {
+    width: 150px;
+    transition: transform 0.4s ease;
+}
+
+.hover-image:hover {
+    transform: rotate(10deg) scale(1.1);
+}

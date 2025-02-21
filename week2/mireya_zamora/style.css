@@ -1,0 +1,22 @@
+#logo {
+    width: 200px;
+    }
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: azure;
+    color: rgb(230, 186, 122);
+}
+
+#latte {
+    width: 200px;
+    margin-right: 0%;
+}
+#Espresso {
+    width: 200px;
+}
+a:hover {
+    text-decoration: none;
+    color: red
+    
+}

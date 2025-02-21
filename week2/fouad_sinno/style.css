@@ -1,0 +1,32 @@
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+* {
+    animation: slideInRight 1s ease-in-out;
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    background: linear-gradient(to right, beige, rgba(0, 89, 255, 0.535))
+}
+h1 {
+    font-size: 36px;
+}
+img {
+    width: 200px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: blue;
+    background-color: white
+}

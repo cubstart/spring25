@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stepped On</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMTuRFVeEK0TF8RV8a_TWKyYUaYWwKK9o&callback=initMap" async defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-link" id="home">HOME</a>
+        <a href="about.html" class="nav-link" id="about">ABOUT</a>
+        <a href="experience.html" class="nav-link" id="experience">EXPERIENCE</a>
+        <a href="steppedon.html" class=" nav-link" id="steppedon">TRAVEL</a>
+    </nav>
+
+    <h1>Places I've Stepped On 🌍</h1>
+    
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            // Define map options
+            var mapOptions = {
+                zoom: 3,
+                center: { lat: 30.5, lng: -100.0 }, // Center somewhere between the two locations
+            };
+
+            // Create the map
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+            // Locations to pin
+            var locations = [
+                { lat: 37.8715, lng: -122.2730, title: "Berkeley, California" }, // Berkeley
+                { lat: 31.2989, lng: 120.5853, title: "Suzhou, China" }, // Suzhou
+                { lat: 37.4138, lng: -79.1423, title: "Lynchburg, Virginia" }, // Lynchburg
+                { lat: 21.3069, lng: -157.8583, title: "Hawaii" }, // Hawaii
+                { lat: 51.5074, lng: -0.1278, title: "London, UK" } // London
+            ];
+
+            // Add markers
+            locations.forEach(function(location) {
+                new google.maps.Marker({
+                    position: { lat: location.lat, lng: location.lng },
+                    map: map,
+                    title: location.title
+                });
+            });
+        }
+    </script>
+</body>
+</html>
