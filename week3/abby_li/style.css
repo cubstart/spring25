@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #8b4513;
+    font-size: 2.5em;
+}
+
+#counter {
+    color: #d2691e;
+    font-weight: bold;
+}
+
+.cookie-image {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.cookie-image:hover {
+    transform: scale(1.1);
+}
+
+.cookie-image:active {
+    transform: scale(0.95);
+}
+
+.stats {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff8dc;
+    border-radius: 8px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#number {
+    font-size: 60px;
+    margin: 20px;
+    color: #8b4513;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+} 
