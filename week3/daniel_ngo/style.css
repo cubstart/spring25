@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    font-family:'Roboto';
+    font-size: larger;
+    background: teal; /* Idea #2: Added background color */
+    color: orange;
+    /* font-weight: bold; */
+}
+
+img {
+    width: 500px;
+}
+
+h2, p {
+    margin: 0
+}
+
