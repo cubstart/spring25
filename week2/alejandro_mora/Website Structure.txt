@@ -1,0 +1,40 @@
+
+Make Cool Table of Contents
+
+1. Home – Brief introduction, personal branding.
+    -> About – Your background, story, skills, and experiences.
+
+3. Coursework
+    -> Big Dynamic Graph Current Idea: Replicate HKN CS Courses with courses I've taken
+    -> What courses connect to my current set of coures? 
+        // Gray out courses I'm planning to take
+
+4. Projects/Professional Page
+    -> Resume – A downloadable or interactive version of your resume.
+5. The Glitch  - (Errors & Failures Page)
+    -> A fun twist on a typical “Projects” page, but instead of just polished work, you also include failures, weird mistakes, or learning moments.
+    -> A self-aware “404 Error” page could also fit here, with fake "glitchy" messages about your creative journey.
+
+4. Blog/Current Events in life - Share thoughts, tutorials, or experiences.
+
+7. “Playlist of My Life”
+    -> A page featuring a curated playlist with songs that inspire your work, along with short explanations for each song.
+    -> Could be linked to Spotify embeds or designed as retro album covers.
+
+    7.5 - Current Musical Projects
+
+8. Contact – Contact form, social media links, email.
+
+9. The Scrapbook (Ideas and Experiments)
+    -> Showcase unfinished projects, sketches, or experimental works in a visually chaotic but cool way.
+    Could include doodles, handwritten notes, and raw concepts to give insight into your creative process.
+
+10. Easter Egg Page 
+ -> Example Idea: A Konami code (↑ ↑ ↓ ↓ ← → ← → B A) unlocks a "Top-Secret" section.
+
+----
+
+Home Page: Pixel Art Scrolling Background
+    -> Concept: Create a pixel art cityscape, landscape, or retro video game world that scrolls as the user navigates down the page.
+    -> Retro Vibe: Use 8-bit or 16-bit style graphics—think Super Mario Bros. or Zelda. As they scroll, different elements of the "scene" could change or animate (like clouds moving, buildings appearing, or characters running across the screen).
+    -> Dynamic Element: Add parallax scrolling so the background and foreground move at different speeds, enhancing the retro experience.
