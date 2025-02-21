@@ -1,0 +1,179 @@
+body {
+    text-align: center;
+    justify-content: center;
+    font-family: "Arial", sans-serif;
+    background: #FFBBC1;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.subheader {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Style for buttons */
+.yesButton, .noButton {
+    font-size: 24px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.yesButton {
+    background-color: #FF8896;
+    color: white;
+}
+
+.noButton {
+    background-color: #FF3333;
+    color: white;
+    z-index: 10000;
+}
+
+/* Reasons Section */
+.reasonsContainer {
+    text-align: center;
+    margin-top: 200px;
+    position: relative; /* So borders align correctly */
+    padding: 50px 80px; /* Add spacing to prevent overlap with hearts */
+}
+
+/* Left & Right Borders */
+.reasonsContainer::before,
+.reasonsContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px; /* Match the heart PNG width */
+    height: 100%;
+    background-image: url('./assests/heart-line.png'); /* Adjust the path */
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.reasonsContainer::before {
+    left: 10%;
+    transform: rotate(180deg); /* Flip the right side */
+}
+
+.reasonsContainer::after {
+    right: 10%;
+}
+
+
+.reasonsTitle {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.reason {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    width: 80%;
+    padding: 20px;
+    gap: 20px;
+    position: relative; /* Ensures content does not overlap the hearts */
+}
+
+.reason img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.reasonText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Alternate layout */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Separator Line */
+.reason + .reason {
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    padding-top: 30px;
+    width: 60%;
+}
+
+/* Carousel Section */
+.carouselContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 50px 0;
+    white-space: nowrap;
+}
+
+.carousel {
+    display: flex;
+    width: max-content;
+    animation: infiniteScroll 30s linear infinite;
+}
+
+/* Carousel images */
+.carousel img {
+    width: 300px; /* Adjust as needed */
+    height: 300px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Keyframes for seamless infinite scroll */
+@keyframes infiniteScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Duplicate images to prevent gap */
+.carousel::after {
+    content: "";
+    display: flex;
+    animation: inherit;
+}
+

@@ -1,0 +1,19 @@
+body {
+    background-color: #CDC1FF;
+}
+
+#headingName {  
+    color: #8072c4; 
+    text-shadow: 4px 4px 7px white;
+    font-size: 60px;   
+    font-weight: lighter; 
+    font-family: 'copperplate', fantasy; 
+
+}
+
+img {
+    width: 300px;  
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}

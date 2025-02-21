@@ -1,0 +1,88 @@
+/* Style for the main headline */
+h1{
+    font-size: 50px;
+    text-align: center; /* Centers the text */
+    font-family: 'Poppins', sans-serif; /* Modern Google Font */
+}
+
+/* Style for the interests section */
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+body{
+    background: #E0FFFF; /* Light cyan background */
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+/* profile picture */
+.profile-pic {
+    width: 180px; 
+    height: 250px;
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+
+.socialmedia{
+    width: 30px; 
+    height: 30px;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+    font-family: 'Playfair Display', serif; /* Nice elegant font */
+    font-size: 24px;
+}
+
+/* Navigation links */
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect - Light Gray Box */
+.nav-link:hover {
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+
+/* Active page bolded */
+.active {
+    font-weight: bold;
+}
+
+/* Spinning text */
+.spinning-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Define the spinning animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1000deg); }
+}
+
+/* Apply infinite spinning on hover */
+.spinning-text:hover {
+    animation: spin 1s linear infinite;
+}
+
+/* Style for the map container */
+#map {
+    width: 80%;
+    height: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+}

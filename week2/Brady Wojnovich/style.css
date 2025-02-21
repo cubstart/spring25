@@ -1,0 +1,54 @@
+img {
+    width: 200px;
+  }
+  body {
+    text-align: center;
+    font-family: 'Arial';
+    background: azure;
+    color: rgb(21, 0, 128);
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: rgb(158, 146, 216);
+    color: rgba(60, 245, 76, 0.391);
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: rgb(15, 0, 100);
+}
+/* Spinning and Rainbow Text */
+#rainbow-text {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    animation: rainbow 3s linear infinite;
+}
+
+ Text Spins on Hover 
+#rainbow-text:hover {
+    animation: spin 1s linear infinite, rainbow 3s linear infinite;
+}
+
+/* Keyframes for the Spinning Effect */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Keyframes for the Rainbow Effect */
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+  

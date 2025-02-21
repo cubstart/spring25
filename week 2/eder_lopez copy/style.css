@@ -1,0 +1,18 @@
+img{
+    float: right
+}
+
+body { 
+    text-align: center;
+    font-family: "Times New Roman";
+    background: linear-gradient(to right, rgb(37, 168, 228), rgb(7, 85, 202)) ;
+    color: rgb(28, 27, 27);
+}
+
+head{
+    font-style: 'Times New Roman';
+    text-align: 'right';
+    color: 'purple'
+
+}
+

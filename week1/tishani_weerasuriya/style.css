@@ -1,0 +1,10 @@
+img {
+    width: 200px;
+    border: 5px solid #add8e6;
+}
+body {
+    text-align: center;
+    font-family:'Courier';
+    color: darksalmon;
+    background: PapayaWhip;
+}

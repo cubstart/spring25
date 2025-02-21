@@ -1,0 +1,94 @@
+img {
+    width: 200px;
+    border-radius: 50%;
+}
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background-image: linear-gradient(to bottom right, rgb(255, 71, 102), rgb(0, 174, 255));
+    color: yellow;
+}
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate360 1s linear;
+}
+
+@keyframes tweakOut {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.5) rotate(90deg);
+    }
+    50% {
+        transform: scale(0.5) rotate(180deg);
+    }
+    75% {
+        transform: scale(2) rotate(270deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.tweak-out {
+    animation: tweakOut 2s ease-in-out;
+}
+
+@keyframes driveOff {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    50% {
+        transform: translateX(100%) scale(0.8);
+    }
+    100% {
+        transform: translateX(200%) scale(0.6);
+    }
+}
+
+@keyframes driveBack {
+    0% {
+        transform: translateX(200%) scale(0.6);
+    }
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
+.drive-off {
+    animation: driveOff 2s ease-in-out forwards;
+}
+
+.drive-back {
+    animation: driveBack 2s ease-in-out forwards;
+}
+
+/* Ferrari styling */
+.ferrari-container {
+    position: relative;
+    display: inline-block;
+}
+
+.ferrari {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.drive-off .ferrari {
+    opacity: 1;
+}

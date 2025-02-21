@@ -1,0 +1,19 @@
+img {
+    width: 200px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Garamond';
+    background: powderblue;
+    color: slateblue;
+}
+
+.column {
+    flex: 33%;
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+}
