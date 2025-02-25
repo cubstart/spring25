@@ -29,9 +29,8 @@ button:hover {
     animation: rainbow 3s linear infinite;
 }
 
- Text Spins on Hover 
 #rainbow-text:hover {
-    animation: spin 1s linear infinite, rainbow 3s linear infinite;
+    animation: spin 1s linear, rainbow 3s linear infinite;
 }
 
 /* Keyframes for the Spinning Effect */
@@ -50,5 +49,28 @@ button:hover {
     71% { color: indigo; }
     85% { color: violet; }
     100% { color: red; }
+}
+
+.explosion {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, rgba(255,255,0,1) 0%, rgba(255,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: explode 0.5s ease-out forwards;
+    pointer-events: none;
+    z-index: 999;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
   

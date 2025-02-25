@@ -14,6 +14,13 @@
             />
         <br>
             <button onclick="spinImage()">Spin</button>
+            <h1>
+                <span id="counter">0</span> cookies
+            </h1>
+            <img id="cookie-img" 
+                 src="https://www.gfifoods.com/media/catalog/product/cache/608c797bf41e8874bcf75172f32fd01b/1/_/1.520oz20cookie_20220613-094305_rqhft3tmv23k13bn.jpg" 
+                 onclick="addOneToCounter()" 
+                />
         
             <script>
                 function spinImage() {
@@ -26,6 +33,28 @@
                 img.style.transform = "rotate(0deg)";
             }, 1000);
         }
+        function addOneToCounter(){
+                document.getElementById("counter").innerText = 
+                    parseInt(document.getElementById("counter").innerText) + 1;
+                    const x = event.clientX;
+                    const y = event.clientY;
+                    createExplosion(x, y);
+            }
+
+            function createExplosion(x, y) {
+                const explosion = document.createElement("div");
+                explosion.className = "explosion";
+                explosion.style.left = `${x - 25}px`; // Center explosion
+                explosion.style.top = `${y - 25}px`; 
+                
+                document.body.appendChild(explosion);
+            
+
+                // Remove explosion after animation completes
+                setTimeout(() => {
+                    explosion.remove();
+                }, 500);
+            }
             </script>
     </body>
 </html>
