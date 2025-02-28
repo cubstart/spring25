@@ -2,66 +2,103 @@
 <html>
     <head> 
         <link rel="stylesheet" href="style.css" />
-    </headhead>
+    </head>
     <body> 
         <h1>Brady Wojnovich</h1>
         <p id="rainbow-text">free bbl's for everyone</p>
-        <p>interviewer: how do your pants stay up during perfomances </p>
+        <p>interviewer: how do your pants stay up during performances?</p>
         <p>lil uzi: belt</p>
+
         <img
            id="spinning-image"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPB1BD8bUmtzO_2U1ZA__3iIp48dOPQKk1lQ&s"
-            />
+           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPB1BD8bUmtzO_2U1ZA__3iIp48dOPQKk1lQ&s"
+        />
         <br>
-            <button onclick="spinImage()">Spin</button>
-            <h1>
-                <span id="counter">0</span> cookies
-            </h1>
-            <img id="cookie-img" 
-                 src="https://www.gfifoods.com/media/catalog/product/cache/608c797bf41e8874bcf75172f32fd01b/1/_/1.520oz20cookie_20220613-094305_rqhft3tmv23k13bn.jpg" 
-                 onclick="addOneToCounter()" 
-                />
-        
-            <script>
-                document.addEventListener("DOMContentLoaded", () => {
+        <button onclick="spinImage()">Spin</button>
+
+        <h1>
+            <span id="counter">0</span> cookies
+        </h1>
+        <img id="cookie-img" 
+             src="https://www.gfifoods.com/media/catalog/product/cache/608c797bf41e8874bcf75172f32fd01b/1/_/1.520oz20cookie_20220613-094305_rqhft3tmv23k13bn.jpg" 
+             onclick="addOneToCounter(event)" 
+        />
+
+        <audio id="cookie-song">
+            <source src="https://www.myinstants.com/media/sounds/taco-bell-bong-sound.mp3" type="audio/mpeg">
+        </audio>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
                 const savedCount = localStorage.getItem("cookieCount");
                 if (savedCount !== null) {
                     document.getElementById("counter").innerText = savedCount;
                 }
             });
+
+            function spinImage() {
+                const img = document.getElementById("spinning-image");
+                img.style.transition = "transform 1s linear";
+                img.style.transform = "rotate(360deg)";
                 
-                function spinImage() {
-            const img = document.getElementById("spinning-image");
-            img.style.transition = "transform 1s linear";
-            img.style.transform = "rotate(360deg)";
-            
-            // Reset the rotation after the spin completes
-            setTimeout(() => {
-                img.style.transform = "rotate(0deg)";
-            }, 1000);
-        }
-        function addOneToCounter(){
-                document.getElementById("counter").innerText = 
-                    parseInt(document.getElementById("counter").innerText) + 1;
-                    const x = event.clientX;
-                    const y = event.clientY;
-                    createExplosion(x, y);
+                setTimeout(() => {
+                    img.style.transform = "rotate(0deg)";
+                }, 1000);
+            }
+
+            function addOneToCounter(event) {
+                const counter = document.getElementById("counter");
+                let count = parseInt(counter.innerText) + 1;
+                counter.innerText = count;
+
+                // Save new count in localStorage
+                localStorage.setItem("cookieCount", count);
+
+                // Create explosion effect at click location
+                createExplosion(event.clientX, event.clientY);
+
+                // Every 10 cookies, trigger rain and sound
+                if (count % 10 === 0) {
+                    startCookieRain();
+                    playCookieSong();
+                }
             }
 
             function createExplosion(x, y) {
                 const explosion = document.createElement("div");
                 explosion.className = "explosion";
-                explosion.style.left = `${x - 25}px`; // Center explosion
+                explosion.style.left = `${x - 25}px`; // Adjust for centering
                 explosion.style.top = `${y - 25}px`; 
-                
-                document.body.appendChild(explosion);
-            
 
-                // Remove explosion after animation completes
+                document.body.appendChild(explosion);
                 setTimeout(() => {
                     explosion.remove();
                 }, 500);
             }
-            </script>
+
+            function startCookieRain() {
+                for (let i = 0; i < 15; i++) {
+                    setTimeout(() => {
+                        const cookie = document.createElement("img");
+                        cookie.src = "https://www.gfifoods.com/media/catalog/product/cache/608c797bf41e8874bcf75172f32fd01b/1/_/1.520oz20cookie_20220613-094305_rqhft3tmv23k13bn.jpg";
+                        cookie.className = "falling-cookie";
+                        cookie.style.left = `${Math.random() * window.innerWidth}px`;
+
+                        document.body.appendChild(cookie);
+
+                        setTimeout(() => {
+                            cookie.remove();
+                        }, 3000);
+                    }, i * 200);
+                }
+            }
+
+            function playCookieSong() {
+                const audio = document.getElementById("cookie-song");
+                audio.currentTime = 0;
+                audio.play()
+                    .catch(error => console.log("Audio playback error: ", error));
+            }
+        </script>
     </body>
 </html>
