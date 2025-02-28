@@ -1,0 +1,11 @@
+img {
+  width: 200px;
+  border-radius: 2px;
+}
+
+body {
+  text-align: center;
+  font-family: "Arial";
+  padding-top: 10vh;
+  background-color: #cadcfb;
+}

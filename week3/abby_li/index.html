@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>
+            <span id="counter">0</span> cookies
+        </h1>
+        <img 
+            class="cookie-image" 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7brjY52lzNXIpNia1Ea_FVQfSSXtv03tLVA&s" 
+            onclick="addOneToCounter()"
+            alt="Cookie"
+        />
+        <div class="stats">
+            <p>Clicks per second: <span id="clicksPerSecond">0</span></p>
+            <p>Total clicks: <span id="totalClicks">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

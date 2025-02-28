@@ -1,0 +1,42 @@
+    <title>Cookie Clicker</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            width: 200px;
+            cursor: pointer;
+            transition: transform 0.1s ease-out;
+        }
+
+        .pop {
+            transform: scale(1.2);
+        }
+
+        .explode {
+            animation: explode 0.5s ease-out forwards;
+        }
+
+        @keyframes explode {
+            0% {
+                transform: scale(2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span id="counter">0</span> cookies
+    </h1>
+    <img id="cookie" src="https://pbs.twimg.com/media/EtptgmFXUAIhYb4.jpg:large" onclick="addOneToCounter()" />
+
+    <script src="/week3/kevin_li/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+img {
+    width: 200px;
+}
+
+body {
+    text-align: center;
+    font-family: "Helvetica";
+    background: radial-gradient(circle, #EDF5FC, black);
+    color: black;
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: black;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  p {
+    font-size: 18px;
+    color: black;
+    animation: fadeIn 3s ease-in-out;
+  }
+
+
+.headshot{
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #888888;
+}

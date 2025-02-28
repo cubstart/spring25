@@ -1,0 +1,21 @@
+img{
+    width: 400px;
+}
+body{
+    text-align: center;
+    font-family: 'Arial';
+    color: rgb(83, 78, 78);
+}
+#resetButton {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#resetButton:hover {
+    background-color: #b1779b;
+}

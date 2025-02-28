@@ -1,0 +1,12 @@
+#pic1 {
+    width: 200px;
+}
+#pic2 {
+    width: 50px
+}
+body {
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    background: cornflowerblue;
+    color: purple;
+}

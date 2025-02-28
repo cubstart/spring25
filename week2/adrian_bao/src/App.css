@@ -1,0 +1,93 @@
+html, body {
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #e8f8eb, #a5e4bb, #7be7ac);
+  color: #3d405b;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-frame {
+  background: white;
+  padding: 40px;
+  border-radius: 20px; 
+  border: 10px solid #344e41; 
+  outline: 10px solid #dad7cd; 
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.skinny-box {
+  max-width: 500px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.bio-text {
+  width: 90%;
+  margin: 20px auto;
+  padding: 5px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.content-frame {
+  position: relative;
+  padding-top: 60px;
+}
+
+.gear {
+  position: absolute;
+  top: 25px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 0 10px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  color: #344e41;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #344e41;
+  width: 0;
+  animation: typing 1.5s steps(30, end) forwards;
+  margin-bottom: 5px;   
+}
+
+p em b {
+  display: block;
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 5px;
+}

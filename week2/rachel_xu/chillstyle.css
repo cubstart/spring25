@@ -1,0 +1,41 @@
+img {
+    width: 100px;
+}
+
+h1 {
+    color: blue;
+}
+
+body {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: Chartreuse;
+}
+
+#cats {
+    font-weight: bold;
+    color: blue;
+}
+
+#fat {
+    font-style: italic;
+    color: hotpink;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 50%;
+}
+
+.photo-gallery img {
+    width: 100%; 
+    height: auto; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+#oiiai {
+    margin: 0 auto;
+}

@@ -1,0 +1,29 @@
+img {
+    width: 600px;
+    /* height: 20px; */
+}
+
+body {
+    text-align: center;
+    font-family: "Geneva";
+    background: teal;
+    color: azure;
+}
+
+button {
+    font-family: "Geneva";
+    background-color: azure;
+    color: #987999;
+    width: 80.5px;
+    height: 31px;
+    font-size: 14px;
+}
+
+a {
+    color: azure;
+}
+
+iframe {
+    width: 1300px;
+    height: 600px;
+}

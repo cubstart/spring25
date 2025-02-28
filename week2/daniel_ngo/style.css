@@ -1,0 +1,32 @@
+/* img {
+    width: 350px;
+} */
+
+body {
+    text-align: center;
+    font-family:'Roboto';
+    font-size: larger;
+    background: azure; /* Idea #2: Added background color */
+    background-image: linear-gradient(to left, azure, teal); /* Idea #7: Add gradient background */
+    color: darkslateblue;
+    /* font-weight: bold; */
+}
+
+a:link {
+    color: green;
+}
+
+img { /* Idea #6: Add CSS animation */
+    animation-duration: 3s;
+    animation-name: spin;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,19 @@
+img {
+    width: 600px;
+    border: 5px solid #c7c7d2
+}
+
+body {
+    text-align: center;
+    font-family: 'Georgia';
+    color: rgb(230, 233, 240); 
+    background: rgb(63, 66, 75);
+}
+
+p {
+    color: rgb(239, 242, 246);   
+}
+
+p1 {
+    color: rgb(160, 167, 202);
+}

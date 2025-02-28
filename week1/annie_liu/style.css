@@ -1,0 +1,16 @@
+img { /*selector (selects all img tags) */
+    width: 600px;
+    border: 5px solid #555;
+}
+
+body {
+    /* centers everything with body tag (entire page)*/
+    text-align: center;
+    font-family: "Arial";
+    background: rgb(200, 201, 229);
+    color: rgb(110, 23, 110);
+}
+
+h1 {
+    font-size: 40px;
+}

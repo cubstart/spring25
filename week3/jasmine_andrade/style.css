@@ -1,0 +1,10 @@
+
+body { 
+    text-align: center;
+    font-family: 'Lora';
+    background: pink;
+}
+
+.move {
+    transform: translate(60px,120px);
+}

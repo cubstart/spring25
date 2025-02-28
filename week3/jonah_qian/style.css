@@ -1,0 +1,16 @@
+#grad {
+    background-image: linear-gradient(rgb(247, 202, 201), rgb(255, 193, 150));
+}
+img {
+    width: 400px;
+}
+body {
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    background-image: linear-gradient(rgb(247, 202, 201), rgb(146, 168, 209));
+    color: brown;
+}
+#introsentence {
+    text-decoration: underline;
+}

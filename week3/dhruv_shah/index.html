@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Game</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        #cookie {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .store_group {
+            display: flex; /* Makes divs appear in a line */
+            gap: 10px; /* Adds space between divs */
+            justify-content: center; /* Centers the divs */
+        }
+        .clicker {
+            background-color: lightblue;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span id="counter">0</span> cookies
+    </h1>
+
+    <h2>
+        <span id="clicksPerSecond">0</span> cookies per second
+    </h2>
+
+
+    <img src="https://www.gfifoods.com/media/catalog/product/cache/608c797bf41e8874bcf75172f32fd01b/1/_/1.520oz20cookie_20220613-094305_rqhft3tmv23k13bn.jpg" onclick="addOneToCounter()" id="cookie" onclick="countClicksPerSecond()"/>
+
+    <h2>Pick a one piece character to help you click.</h2>
+
+    <div class="store_group">
+        <div class="clicker" onclick="buyClicker('clicker')" role="button" tabindex="0">
+            <h3>
+                Clicker
+            </h3>
+            <p>
+                Cost: <span id="clickerCost">0</span> Cookies
+            </p>
+            <p>
+
+                CPS: +<span id="clickerCPS">0</span>
+            </p>
+            <p>
+
+                Quantity: <span id="clickerQuantity">0</span>
+            </p>
+
+        </div>
+    
+        <div class="clicker" onclick="buyClicker('doge')" role="button" tabindex="0">
+            <h3>
+                Doge
+            </h3>
+            <p>
+                Cost: <span id="dogeCost">0</span> Cookies
+            </p>
+            <p>
+
+                CPS: +<span id="dogeCPS">0</span>
+            </p>
+            <p>
+
+                Quantity: <span id="dogeQuantity">0</span>
+            </p>
+        </div>
+    
+        <div class="clicker" onclick="buyClicker('capybara')" role="button" tabindex="0">
+            <h3>
+                Capybara
+            </h3>
+            <p>
+                Cost: <span id="capybaraCost">0</span> Cookies
+            </p>
+            <p>
+
+                CPS: +<span id="capybaraCPS">0</span>
+            </p>
+            <p>
+
+                Quantity: <span id="capybaraQuantity">0</span>
+            </p>
+        </div>
+    </div>
+    
+
+
+    <script src="/week3/dhruv_shah/script.js" />
+</body>
+
+
+</html>

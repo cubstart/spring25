@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="style.css" />
+    </headhead>
+    <body> 
+        <h1>Brady Wojnovich</h1>
+        <p id="rainbow-text">free bbl's for everyone</p>
+        <p>interviewer: how do your pants stay up during perfomances </p>
+        <p>lil uzi: belt</p>
+        <img
+           id="spinning-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPB1BD8bUmtzO_2U1ZA__3iIp48dOPQKk1lQ&s"
+            />
+        <br>
+            <button onclick="spinImage()">Spin</button>
+        
+            <script>
+                function spinImage() {
+            const img = document.getElementById("spinning-image");
+            img.style.transition = "transform 1s linear";
+            img.style.transform = "rotate(360deg)";
+            
+            // Reset the rotation after the spin completes
+            setTimeout(() => {
+                img.style.transform = "rotate(0deg)";
+            }, 1000);
+        }
+            </script>
+    </body>
+</html>

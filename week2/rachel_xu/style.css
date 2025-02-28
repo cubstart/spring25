@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    font-family:monospace;
+    background-color: rgb(255, 255, 255);
+}
+
+img {
+    width: 100px;
+}
+
+nav a {
+    color: rgb(255, 0, 0);
+    text-decoration:underline;
+    text-decoration-style: wavy;
+    font-weight:bold;
+}
+
+nav a:hover {
+    color: rgba(255, 0, 0, 0.4);
+    text-decoration: dotted;
+}
+
+p a {
+    color: rgb(0, 0, 0);
+    text-decoration:underline;
+    text-decoration-style:solid;
+}
+
+p a:hover {
+    color: rgba(0, 0, 0, 0.4); 
+    text-decoration: underline; 
+}
+
+.text-background {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 10vw; 
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.0.4); 
+    width: 100%; 
+    white-space: nowrap; 
+    pointer-events: none;
+}
+
+.image-container {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 60%;
+    text-align: center;
+    z-index: -1;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+#blurb {
+    font-weight: lighter;
+    color: rgba(255, 0, 0);
+    margin: 10%;
+}
