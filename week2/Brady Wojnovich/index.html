@@ -23,6 +23,13 @@
                 />
         
             <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                const savedCount = localStorage.getItem("cookieCount");
+                if (savedCount !== null) {
+                    document.getElementById("counter").innerText = savedCount;
+                }
+            });
+                
                 function spinImage() {
             const img = document.getElementById("spinning-image");
             img.style.transition = "transform 1s linear";
