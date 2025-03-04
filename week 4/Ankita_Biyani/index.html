@@ -1,0 +1,51 @@
+<!-CRTL + SHIFT + P - to open the server--> 
+
+<!DOCTYPE html>
+
+<h1>Cookie Game!</h1>
+<h2>Click on the Correct Cookie to earn points!</h2>
+
+<html>
+    <body>
+        <h2>
+            <span id="counter">0</span> points
+        </h2>
+        <img src="https://www.gfifoods.com/media/catalog/product/cache/608c797bf41e8874bcf75172f32fd01b/1/_/1.520oz20cookie_20220613-094305_rqhft3tmv23k13bn.jpg" onclick="addOneToCounter()" />
+        <script src="script.js"></script>
+    </body>
+
+    <head>
+        <style> 
+            .wrapper {
+                width: 800px;
+                height: 8000px;
+                background-color: red;
+                }
+
+            img {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation: myfirst 5s linear 2s infinite alternate;
+                }
+
+                @keyframes myfirst {
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:200px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:red; left:0px; top:0px;}
+                }
+        </style>
+    </head>
+
+    <div class = "wrapper">
+        <img src = "https://www.gfifoods.com/media/catalog/product/cache/608c797bf41e8874bcf75172f32fd01b/1/_/1.520oz20cookie_20220613-094305_rqhft3tmv23k13bn.jpg">
+    </div>
+    <audio hidden autoplay>
+        <source src="https://drive.google.com/uc?export=download&id=1S-pPMub9wYQitLnULF68v81_4Zk5pBmz" type = "audio/mpeg">
+        Your browser doesn't support this audio element.
+    </audio>
+
+</html>
