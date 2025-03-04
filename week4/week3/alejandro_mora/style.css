@@ -1,15 +1,18 @@
 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     width: 500px;
     height: 300px;
-    margin-top: 50px;
-
+    border: 1px solid black;
 }
 
 body {
     text-align: center; 
     font-family: 'Tahoma';
-    background-color: azure; 
-    color: black; /* Text Color*/
+    background-color: #1E2019; 
+    color: #8DAB7F; /* Text Color*/
 
     display: block;
     margin-left: auto;
