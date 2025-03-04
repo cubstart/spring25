@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counting Cookies</title>
+    <style>
+        body {
+            background-color: rgb(224, 197, 164);
+            text-align: Center; /* Center text and inline elements horizontally */
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span id="counter">0</span> cookies
+    </h1>
+    <img 
+    src="https://partakefoods.com/cdn/shop/products/SoftBakedChocolateChipcookiestack_1.png?v=1646841656"
+    width="800"
+    height="800"
+    alt="stack of cookies"
+    class="center"
+    onclick="addOneToCounter()"
+    />
+    <form id="cookieForm" onsubmit="handleFormSubmit(event)">
+        <fieldset>
+            <legend>What is your favorite type of cookie?</legend>
+            <label>
+                <input type="radio" name="cookie" value="chocolate_chip">
+                Chocolate Chip
+            </label><br>
+            <label>
+                <input type="radio" name="cookie" value="oatmeal_raisin">
+                Oatmeal Raisin
+            </label><br>
+            <label>
+                <input type="radio" name="cookie" value="peanut_butter">
+                Peanut Butter
+            </label><br>
+            <label>
+                <input type="radio" name="cookie" value="sugar">
+                Sugar
+            </label><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <script src="/week4/Jose_Aguilar/script.js"></script> 
+</body>
+</html>
