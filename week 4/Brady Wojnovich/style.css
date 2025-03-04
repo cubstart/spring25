@@ -1,13 +1,16 @@
 img {
     width: 200px;
-  }
-  body {
+    cursor: pointer;
+}
+  
+body {
     text-align: center;
     font-family: 'Arial';
     background: azure;
     color: rgb(21, 0, 128);
-  }
-  button {
+}
+  
+button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
@@ -21,6 +24,7 @@ img {
 button:hover {
     background: rgb(15, 0, 100);
 }
+
 /* Spinning and Rainbow Text */
 #rainbow-text {
     font-size: 24px;
@@ -51,6 +55,7 @@ button:hover {
     100% { color: red; }
 }
 
+/* Explosion Effect */
 .explosion {
     position: absolute;
     width: 50px;
@@ -64,13 +69,21 @@ button:hover {
 }
 
 @keyframes explode {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(2);
-        opacity: 0;
-    }
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
 }
-  
+
+/* Falling Cookie Animation */
+.falling-cookie {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: fall 3s linear forwards;
+    z-index: 999;
+    top: -50px; /* Start above the screen */
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
