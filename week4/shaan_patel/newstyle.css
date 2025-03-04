@@ -1,0 +1,41 @@
+img {
+    width: 500px;
+}
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: rgb(83, 83, 126);
+    color: rgb(255, 255, 255);
+}
+
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: linear-gradient(180deg, hsl(195, 50%, 50%), #000000);
+    color: rgb(255, 255, 255);
+    height: 1000px;
+}
+.my-button {
+    cursor: pointer;
+    font: times;
+    background-color: #ffffff; 
+    color: #000000;  
+    padding: 10px 20px;
+    border-radius: 4px; 
+    position: absolute; /* allow absolute positioning */
+  top: 10px;         /* distance from the top of the page */
+  left: 10px;   
+
+  }
+  .my-button1{
+    cursor: pointer;
+    font: times;
+    background-color: #ffffff; 
+    color: #000000;  
+    padding: 10px 20px;
+    border-radius: 4px; 
+    position: absolute; /* allow absolute positioning */
+  top: 10px;         /* distance from the top of the page */
+  left: 1320px;   
+
+  }
