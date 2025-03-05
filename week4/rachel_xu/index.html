@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1><span id="counter">0</span> bites 🍪</h1>
+        <h2 id="cookie-count">Cookies eaten: 0</h2> 
+
+        <div class="image-container">
+            <img id="cookie-img" src="cookies/1.png" class="cookie" onclick="addOneToCounter()"/>
+        </div>
+
+        <button id="restart-btn" onclick="restartGame()" style="display: none;">
+            Let me eat one more 🥹
+        </button>
+    </div>
+
+    <h2 id="store-message" style="margin-top: 20px;"></h2> <!-- Store unlock message -->
+
+    <div id="store-container" style="display: none;" class="store">
+        <div class="store-item" id="store-item-0"><img src="items/oia-uia.gif"><p>Oiiai</p> <p>🍪 15 bites</p></div>
+        <div class="store-item" id="store-item-1"><img src="items/volcano.png"><p>Volcano</p> <p>🍪 25 bites</p></div>
+        <div class="store-item" id="store-item-2"><img src="items/cursor.png"><p>Mouse?</p> <p>🍪 40 bites</p></div>
+        <div class="store-item" id="store-item-3"><img src="items/mouse.jpeg"><p>Real Mouse</p> <p>🍪 60 bites</p></div>
+        <div class="store-item" id="store-item-4"><img src="items/store.png"><p>Store</p> <p>🍪 100 bites</p></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
